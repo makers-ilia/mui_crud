@@ -8,7 +8,7 @@ import {
 } from "./Context.types";
 import axios from "axios";
 
-export const productContext = createContext<IContextProps | null>(null);
+export const productContext = createContext({} as IContextProps);
 
 const INIT_STATE: State = {
   products: [],
